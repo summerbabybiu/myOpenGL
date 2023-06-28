@@ -1,0 +1,3 @@
+/Users/summerbaby/Desktop/summmbaby/myOpenGL/build/CMakeFiles/MyOpenGL.dir
+/Users/summerbaby/Desktop/summmbaby/myOpenGL/build/CMakeFiles/ALL_BUILD.dir
+/Users/summerbaby/Desktop/summmbaby/myOpenGL/build/CMakeFiles/ZERO_CHECK.dir
