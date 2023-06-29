@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		08895E6D2E844AFFB2214341 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 7BE9B8DEA82844BAA7752876 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = A949567679C24FA49265E686 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				218C4AA785C493170820CB5F /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -20,13 +20,13 @@
 		};
 		530DA481951444D3BC126C76 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = C87056E0E1E54490BEC05918 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 64F6343EB05644D2BF0FDE5B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				7EB2DA5371029BCCB80FCB0C /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				C8CDCBFACD304512A6FA5313 /* PBXTargetDependency */,
-				B95FD196F98F4EFC830A16B9 /* PBXTargetDependency */,
+				DFEA30C7669C4887878ACEF4 /* PBXTargetDependency */,
+				B960D78A46304D9785F8F228 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -34,61 +34,64 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		310B50E0426048F2A62B7109 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXBuildFile; fileRef = E82643ADBE7149F496387C51 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework */; };
-		51B9BCC09AB3490787EA16A1 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXBuildFile; fileRef = 5F5D7BEA171F4493A465EBE4 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework */; };
-		7385A15A1F8F47FBA56EF64B /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = C9C5730F55B54FB9A9F80387 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */; };
-		84253C8FF7FF4E8398C7B883 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 8FF25DDC5A0B44078BBE25E4 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */; };
-		A40DA96E6F0C4BFCA4FF5E71 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXBuildFile; fileRef = 1ED0057C4757406387A5489D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework */; };
-		E19A72DC76094E3589B4B35D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXBuildFile; fileRef = A5437B6CC3094CBDA03DDD47 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework */; };
+		09EDE65B88A142D4AC34EF32 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */ = {isa = PBXBuildFile; fileRef = E431FD32E16C495FBA6A5415 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */; };
+		0E87660A0D5048E78C8A4E70 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/Rendered.cpp */ = {isa = PBXBuildFile; fileRef = 4EEAE2687C044185830052F7 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/Rendered.cpp */; };
+		4141AB563F3F4B7F86E2796E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXBuildFile; fileRef = F6F196ED62FB4442A9B27F9A /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework */; };
+		4A2EF645DEED4A07923C616D /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/VertexBuffer.cpp */ = {isa = PBXBuildFile; fileRef = F4526593EEB04C6E83D3C1CA /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/VertexBuffer.cpp */; };
+		76150F18EA2143D1B8CB3D46 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXBuildFile; fileRef = 2346C56EBCE041B0BCA2E9D2 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework */; };
+		76C036085A5F44569B9A13DA /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1CA4F17D975B4B6AA78C8DB8 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */; };
+		941802E515DC43E3AA8AF1C7 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/IndexBuffer.cpp */ = {isa = PBXBuildFile; fileRef = 0701C8C31BFE4A78BDE3B420 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/IndexBuffer.cpp */; };
+		95A808B947A6493584F81C55 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXBuildFile; fileRef = BFDE1DD12C934E1583FB7410 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework */; };
+		B4106ADDE1D140F5A721AE1D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXBuildFile; fileRef = E5D6831516A2420881436F2B /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		4AF318AEE6A04F14A5177A67 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		59C7587AA70A41D8B967127F /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		5C97D5A7462D430E925A69F9 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		D7FDD6A7367C4D788CD0586C /* Release */ = {
+		4800CDCCF8F9469D89E11F94 /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
+		790E72198D8A41199F6780FA /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		C08F180DA2574AB2B5B7A119 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		C77B71F2DE9547A38DA8CC58 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		7A3BFE848D4140458B23653F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7F355ACFF03E4870A8E2ABF5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 983CF0A914CC426F8C8E4B7B;
-			remoteInfo = MyOpenGL;
-		};
-		A553EBE1288C4542A9297C41 /* PBXContainerItemProxy */ = {
+		0DBF1263201049A38C6C3EC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7F355ACFF03E4870A8E2ABF5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 08895E6D2E844AFFB2214341;
 			remoteInfo = ZERO_CHECK;
 		};
-		CBD2414737EF44A7AA6E22BC /* PBXContainerItemProxy */ = {
+		CEF0A543080B442CB91D1232 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F355ACFF03E4870A8E2ABF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 983CF0A914CC426F8C8E4B7B;
+			remoteInfo = MyOpenGL;
+		};
+		F5E0C127D5BC43F5B30EEB37 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7F355ACFF03E4870A8E2ABF5 /* Project object */;
 			proxyType = 1;
@@ -98,18 +101,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1ED0057C4757406387A5489D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
-		5F5D7BEA171F4493A465EBE4 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		695DA05D132641BDA6E8DBCF /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		8FF25DDC5A0B44078BBE25E4 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		A5437B6CC3094CBDA03DDD47 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		C9C5730F55B54FB9A9F80387 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		E82643ADBE7149F496387C51 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
-		FFDCBEFF66984E11946C7596 /* MyOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MyOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
+		014C3ED072A840BE95982AA9 /* MyOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MyOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
+		0701C8C31BFE4A78BDE3B420 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/IndexBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IndexBuffer.cpp; path = src/IndexBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		1CA4F17D975B4B6AA78C8DB8 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2346C56EBCE041B0BCA2E9D2 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		4EEAE2687C044185830052F7 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/Rendered.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Rendered.cpp; path = src/Rendered.cpp; sourceTree = SOURCE_ROOT; };
+		B4EDDCC1C63C4442917E7DFF /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BFDE1DD12C934E1583FB7410 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		E431FD32E16C495FBA6A5415 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E5D6831516A2420881436F2B /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		F4526593EEB04C6E83D3C1CA /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/VertexBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VertexBuffer.cpp; path = src/VertexBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		F6F196ED62FB4442A9B27F9A /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		05651B3EC04E4D6184D5DF2A /* Frameworks */ = {
+		9840E65B9BCC4365BDAAF99E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,66 +125,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		194015ABE16048B2B1AB3A79 /* CMake Rules */ = {
+		1AD93D7C55E14B18929D004D /* MyOpenGL */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		40D2DEF7D07E41B3BA6A3FF2 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				194015ABE16048B2B1AB3A79 /* CMake Rules */,
-				695DA05D132641BDA6E8DBCF /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		4A79944B08564FCAB560737E /* MyOpenGL */ = {
-			isa = PBXGroup;
-			children = (
-				DD33BEF88E73461F804896FC /* Source Files */,
-				C9C5730F55B54FB9A9F80387 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */,
+				6539238A3CA244DFB46517B1 /* Source Files */,
+				1CA4F17D975B4B6AA78C8DB8 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */,
 			);
 			name = MyOpenGL;
 			sourceTree = "<group>";
 		};
-		ACA2DBE0A9C142C7A34FB3E1 /* Frameworks */ = {
+		6539238A3CA244DFB46517B1 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				5F5D7BEA171F4493A465EBE4 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework */,
-				A5437B6CC3094CBDA03DDD47 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework */,
-				1ED0057C4757406387A5489D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework */,
-				E82643ADBE7149F496387C51 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DD33BEF88E73461F804896FC /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				8FF25DDC5A0B44078BBE25E4 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */,
+				0701C8C31BFE4A78BDE3B420 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/IndexBuffer.cpp */,
+				4EEAE2687C044185830052F7 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/Rendered.cpp */,
+				F4526593EEB04C6E83D3C1CA /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/VertexBuffer.cpp */,
+				E431FD32E16C495FBA6A5415 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		E12A0A43F8554175AFC353DB /* Products */ = {
+		666C4738D56E4130A85E809C /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				FFDCBEFF66984E11946C7596 /* MyOpenGL */,
+				DB869ECB04F04025AD1171A5 /* CMake Rules */,
+				B4EDDCC1C63C4442917E7DFF /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		8E690CECF9EC4DA280B364DE = {
+			isa = PBXGroup;
+			children = (
+				1AD93D7C55E14B18929D004D /* MyOpenGL */,
+				666C4738D56E4130A85E809C /* ALL_BUILD */,
+				BBB454DFA953418FA2D14340 /* Products */,
+				946FBD8B9B154AD5B31D7BB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		946FBD8B9B154AD5B31D7BB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6F196ED62FB4442A9B27F9A /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Cocoa.framework */,
+				E5D6831516A2420881436F2B /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework */,
+				BFDE1DD12C934E1583FB7410 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework */,
+				2346C56EBCE041B0BCA2E9D2 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBB454DFA953418FA2D14340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				014C3ED072A840BE95982AA9 /* MyOpenGL */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F0B183B4F6724CFA8771E5B5 = {
+		DB869ECB04F04025AD1171A5 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				4A79944B08564FCAB560737E /* MyOpenGL */,
-				40D2DEF7D07E41B3BA6A3FF2 /* ALL_BUILD */,
-				E12A0A43F8554175AFC353DB /* Products */,
-				ACA2DBE0A9C142C7A34FB3E1 /* Frameworks */,
 			);
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,19 +195,19 @@
 /* Begin PBXNativeTarget section */
 		983CF0A914CC426F8C8E4B7B /* MyOpenGL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B51BF99B13F74AC881735251 /* Build configuration list for PBXNativeTarget "MyOpenGL" */;
+			buildConfigurationList = 51DCC4F5E96E4F12A6E35FDC /* Build configuration list for PBXNativeTarget "MyOpenGL" */;
 			buildPhases = (
-				A1D0A19AD2544139B60B7D16 /* Sources */,
-				05651B3EC04E4D6184D5DF2A /* Frameworks */,
+				B0E58CB3BC65410493B1453D /* Sources */,
+				9840E65B9BCC4365BDAAF99E /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1FB2043BF8BF401C8D9EAD8B /* PBXTargetDependency */,
+				ABF886B847094BD99969C779 /* PBXTargetDependency */,
 			);
 			name = MyOpenGL;
 			productName = MyOpenGL;
-			productReference = FFDCBEFF66984E11946C7596 /* MyOpenGL */;
+			productReference = 014C3ED072A840BE95982AA9 /* MyOpenGL */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -210,18 +219,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = 03F2D4E23F854F979FEBC1C4 /* Build configuration list for PBXProject "MyOpenGL" */;
+			buildConfigurationList = 83012B8613654876828240BF /* Build configuration list for PBXProject "MyOpenGL" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				4AF318AEE6A04F14A5177A67 /* Debug */,
-				D7FDD6A7367C4D788CD0586C /* Release */,
-				5C97D5A7462D430E925A69F9 /* MinSizeRel */,
-				59C7587AA70A41D8B967127F /* RelWithDebInfo */,
+				C08F180DA2574AB2B5B7A119 /* Debug */,
+				4800CDCCF8F9469D89E11F94 /* Release */,
+				C77B71F2DE9547A38DA8CC58 /* MinSizeRel */,
+				790E72198D8A41199F6780FA /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = F0B183B4F6724CFA8771E5B5;
+			mainGroup = 8E690CECF9EC4DA280B364DE;
 			projectDirPath = /Users/summerbaby/Desktop/summmbaby/myOpenGL;
 			projectRoot = "";
 			targets = (
@@ -332,220 +341,39 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A1D0A19AD2544139B60B7D16 /* Sources */ = {
+		B0E58CB3BC65410493B1453D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84253C8FF7FF4E8398C7B883 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */,
+				941802E515DC43E3AA8AF1C7 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/IndexBuffer.cpp */,
+				0E87660A0D5048E78C8A4E70 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/Rendered.cpp */,
+				4A2EF645DEED4A07923C616D /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/VertexBuffer.cpp */,
+				09EDE65B88A142D4AC34EF32 /* /Users/summerbaby/Desktop/summmbaby/myOpenGL/src/main.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1FB2043BF8BF401C8D9EAD8B /* PBXTargetDependency */ = {
+		ABF886B847094BD99969C779 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 08895E6D2E844AFFB2214341 /* ZERO_CHECK */;
-			targetProxy = CBD2414737EF44A7AA6E22BC /* PBXContainerItemProxy */;
+			targetProxy = F5E0C127D5BC43F5B30EEB37 /* PBXContainerItemProxy */;
 		};
-		B95FD196F98F4EFC830A16B9 /* PBXTargetDependency */ = {
+		B960D78A46304D9785F8F228 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 983CF0A914CC426F8C8E4B7B /* MyOpenGL */;
-			targetProxy = 7A3BFE848D4140458B23653F /* PBXContainerItemProxy */;
+			targetProxy = CEF0A543080B442CB91D1232 /* PBXContainerItemProxy */;
 		};
-		C8CDCBFACD304512A6FA5313 /* PBXTargetDependency */ = {
+		DFEA30C7669C4887878ACEF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 08895E6D2E844AFFB2214341 /* ZERO_CHECK */;
-			targetProxy = A553EBE1288C4542A9297C41 /* PBXContainerItemProxy */;
+			targetProxy = 0DBF1263201049A38C6C3EC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		008EC36A841144DB8C1105C9 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		35F4569694964B109A1ACD7C /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/MinSizeRel;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw/include,/usr/local/include,"$(inherited)");
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw/libglfw3.a,/usr/local/lib/libGLEW.dylib,"-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreVideo","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = MyOpenGL;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build/MyOpenGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		6327FFEABFFA40DAB1638AC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build;
-			};
-			name = Release;
-		};
-		7133FFCE9A1846EB9E38DE5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		78E77AD99A5B40D6AAE42C28 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build;
-			};
-			name = MinSizeRel;
-		};
-		7E805E7CAE7B474BB1FA8EF1 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		81F1EEA4C20E4177885F271F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SYMROOT = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build;
-			};
-			name = Debug;
-		};
-		88044B03E14E4F9BB91F271A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		8A559019F63C4083834BF4E3 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/RelWithDebInfo;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw/include,/usr/local/include,"$(inherited)");
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++14' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw/libglfw3.a,/usr/local/lib/libGLEW.dylib,"-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreVideo","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = MyOpenGL;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build/MyOpenGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		9EB3D703592B4CA79535CF31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		A2EAD8B962A7407DAAA20032 /* Debug */ = {
+		0753F84E2A4645F286D879FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -571,7 +399,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		B0272D0949784B9D87BC3DFF /* MinSizeRel */ = {
+		08836B6EF0E84A08B6B92AB9 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -591,27 +419,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		CEB6B566497A40919171DF45 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		D1627179B441458A9E2F41C7 /* Release */ = {
+		14A4FB9C536C4EDE8A0EFB8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -637,7 +445,73 @@ exit 0";
 			};
 			name = Release;
 		};
-		DD9B297F2AF348039FB60958 /* Release */ = {
+		1D4711CF52FF4855AF430A47 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		506D05F3A73548BAA04832F1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw/include,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw/libglfw3.a,/usr/local/lib/libGLEW.dylib,"-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreVideo","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MyOpenGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build/MyOpenGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		59BE7941305B4ECCBF687F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		68D3D59892254717A822E7FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -657,7 +531,48 @@ exit 0";
 			};
 			name = Release;
 		};
-		E0938AC963A84FEAB2121E3F /* RelWithDebInfo */ = {
+		7FC95F2771B5469B8BB1ACF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8AFD6512E38A414EAB94108A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build;
+			};
+			name = Release;
+		};
+		9902AE3BF2B244A6A5946931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build;
+			};
+			name = Debug;
+		};
+		AEB5234BCF0E4681898D0556 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
@@ -668,49 +583,146 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
+		B89EA660773041AA89728941 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BEB003C8CAFC475D9A9D9BE0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw/include,/usr/local/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw/libglfw3.a,/usr/local/lib/libGLEW.dylib,"-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreVideo","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MyOpenGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build/MyOpenGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C5272D4CA92A43A8AED85ADF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/summerbaby/Desktop/summmbaby/myOpenGL/build/build;
+			};
+			name = MinSizeRel;
+		};
+		D90ED712523C4BED8F6C1908 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EDC1236FC99648FEBCC1CAFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03F2D4E23F854F979FEBC1C4 /* Build configuration list for PBXProject "MyOpenGL" */ = {
+		51DCC4F5E96E4F12A6E35FDC /* Build configuration list for PBXNativeTarget "MyOpenGL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81F1EEA4C20E4177885F271F /* Debug */,
-				6327FFEABFFA40DAB1638AC4 /* Release */,
-				78E77AD99A5B40D6AAE42C28 /* MinSizeRel */,
-				E0938AC963A84FEAB2121E3F /* RelWithDebInfo */,
+				0753F84E2A4645F286D879FC /* Debug */,
+				14A4FB9C536C4EDE8A0EFB8E /* Release */,
+				506D05F3A73548BAA04832F1 /* MinSizeRel */,
+				BEB003C8CAFC475D9A9D9BE0 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		7BE9B8DEA82844BAA7752876 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		64F6343EB05644D2BF0FDE5B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7133FFCE9A1846EB9E38DE5F /* Debug */,
-				9EB3D703592B4CA79535CF31 /* Release */,
-				7E805E7CAE7B474BB1FA8EF1 /* MinSizeRel */,
-				008EC36A841144DB8C1105C9 /* RelWithDebInfo */,
+				7FC95F2771B5469B8BB1ACF1 /* Debug */,
+				68D3D59892254717A822E7FE /* Release */,
+				08836B6EF0E84A08B6B92AB9 /* MinSizeRel */,
+				B89EA660773041AA89728941 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B51BF99B13F74AC881735251 /* Build configuration list for PBXNativeTarget "MyOpenGL" */ = {
+		83012B8613654876828240BF /* Build configuration list for PBXProject "MyOpenGL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2EAD8B962A7407DAAA20032 /* Debug */,
-				D1627179B441458A9E2F41C7 /* Release */,
-				35F4569694964B109A1ACD7C /* MinSizeRel */,
-				8A559019F63C4083834BF4E3 /* RelWithDebInfo */,
+				9902AE3BF2B244A6A5946931 /* Debug */,
+				8AFD6512E38A414EAB94108A /* Release */,
+				C5272D4CA92A43A8AED85ADF /* MinSizeRel */,
+				AEB5234BCF0E4681898D0556 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C87056E0E1E54490BEC05918 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		A949567679C24FA49265E686 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88044B03E14E4F9BB91F271A /* Debug */,
-				DD9B297F2AF348039FB60958 /* Release */,
-				B0272D0949784B9D87BC3DFF /* MinSizeRel */,
-				CEB6B566497A40919171DF45 /* RelWithDebInfo */,
+				59BE7941305B4ECCBF687F77 /* Debug */,
+				EDC1236FC99648FEBCC1CAFB /* Release */,
+				D90ED712523C4BED8F6C1908 /* MinSizeRel */,
+				1D4711CF52FF4855AF430A47 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
