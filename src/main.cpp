@@ -174,13 +174,15 @@ int main(void)
     unsigned int buffer;
     glGenBuffers(1, &buffer);
     glBindBuffer(GL_ARRAY_BUFFER, buffer);
-    glBufferData(GL_ARRAY_BUFFER, 6 * 2 * sizeof(float), positions, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, 4 * 2 * sizeof(float), positions, GL_STATIC_DRAW);
 
     unsigned int vertexArray;
     glGenVertexArrays(1, &vertexArray);
     glBindVertexArray(vertexArray);
 
+    // 启用顶点属性
     glEnableVertexAttribArray(0);
+    // 指定实际数据的布局
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0);
 
 
@@ -223,8 +225,15 @@ int main(void)
     std::cout << "FRAGMENT" << std::endl;
     std::cout << source.FragmentSource << std::endl;
 
-     unsigned int shader = CreateShader(source.VertexSource, source.FragmentSource);
-     glUseProgram(shader);
+    unsigned int shader = CreateShader(source.VertexSource, source.FragmentSource);
+    GLCall(glUseProgram(shader));
+
+    GLCall(int location = glGetUniformLocation(shader, "u_Color"));
+    ASSERT(location != -1);
+    GLCall(glUniform4f(location, 0.8f, 0.3f, 0.8f, 1.0f));
+
+    float r =0.0f;
+    float increment = 0.05f;
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
@@ -240,13 +249,22 @@ int main(void)
         // glEnd();
 
         // glDrawArrays(GL_TRIANGLES, 0, 3); // 这一行是用来画一个三角形的
-        GLClearError();
+        // GLClearError();
+
+        GLCall(glUniform4f(location, r, 0.3f, 0.8f, 1.0f));
         GLCall( glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr)) ; // 这一行是用来画一个正方形的
         // GLCheckError();
         // ASSERT(GLLogCall());
+        if (r > 1.0f) {
+            increment = -0.05f;
+        } else if (r < 0.0f) {
+            increment = 0.05f;
+        }
 
+        r += increment;
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
+        glfwSwapInterval(1);
 
         /* Poll for and process events */
         glfwPollEvents();
