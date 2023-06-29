@@ -6,6 +6,24 @@
 #include <fstream>
 #include <sstream>
 
+// 断言函数
+#define ASSERT(x) if (!(x)) __builtin_trap();
+
+#define GLCall(x) GLClearError();\
+    x;\
+    ASSERT(GLLogCall(#x, __FILE__, __LINE__));
+
+static void GLClearError() {
+    while (glGetError() != GL_NO_ERROR);
+}
+
+static bool GLLogCall(const char* function, const char* file, int line) {
+    while (GLenum error = glGetError()) {
+        std::cout << "[OpenGL Error] (" << error << "):" << function << " " << file << ":" << line << std::endl;
+        return false;
+    }
+    return true;
+}
 
 struct ShaderProgramSource {
     std::string VertexSource;
@@ -143,14 +161,20 @@ int main(void)
     // glewInit(); // 这一行要放在创建窗口之后，不然会报错
 
     float positions[] = {
-        -0.5f, -0.5f,
-         0.0f,  0.5f,
-         0.5f, -0.5f,
+        -0.5f, -0.5f, // 0
+        0.5f,  -0.5f, // 1
+        0.5f, 0.5f, // 2
+        -0.5f, 0.5f, // 3
+    };
+    // 索引缓冲区index buffer， 必须由unsigned int类型
+    unsigned int indices[] = {
+        0, 1, 2,
+        2, 3, 0 
     };
     unsigned int buffer;
     glGenBuffers(1, &buffer);
     glBindBuffer(GL_ARRAY_BUFFER, buffer);
-    glBufferData(GL_ARRAY_BUFFER, 6 * sizeof(float), positions, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, 6 * 2 * sizeof(float), positions, GL_STATIC_DRAW);
 
     unsigned int vertexArray;
     glGenVertexArrays(1, &vertexArray);
@@ -159,26 +183,33 @@ int main(void)
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0);
 
+
+
+    unsigned int ibo;
+    glGenBuffers(1, &ibo);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * sizeof(unsigned int), indices, GL_STATIC_DRAW);
+
     // glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-    std::string vertexShader = 
-        "#version 330 core\n"
-        "\n"
-        "layout(location = 0) in vec4 position;\n"
-        "void main()\n"
-        "{\n"
-        "   gl_Position = position;\n"
-        "}\n";
-
-    std::string fragmentShader =
-        "#version 330 core\n"
-        "\n"
-        "layout(location = 0) out vec4 color;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "   color = vec4(0.1, 0.5, 0.0, 1.0);\n"
-        "}\n";
+//    std::string vertexShader =
+//        "#version 330 core\n"
+//        "\n"
+//        "layout(location = 0) in vec4 position;\n"
+//        "void main()\n"
+//        "{\n"
+//        "   gl_Position = position;\n"
+//        "}\n";
+//
+//    std::string fragmentShader =
+//        "#version 330 core\n"
+//        "\n"
+//        "layout(location = 0) out vec4 color;\n"
+//        "\n"
+//        "void main()\n"
+//        "{\n"
+//        "   color = vec4(0.1, 0.5, 0.0, 1.0);\n"
+//        "}\n";
 
 //    unsigned int shader = CreateShader(vertexShader, fragmentShader);
 //    glUseProgram(shader);
@@ -208,7 +239,11 @@ int main(void)
         // glVertex2d(0, 0.5);
         // glEnd();
 
-        glDrawArrays(GL_TRIANGLES, 0, 3); // 这一行是用来画一个三角形的
+        // glDrawArrays(GL_TRIANGLES, 0, 3); // 这一行是用来画一个三角形的
+        GLClearError();
+        GLCall( glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr)) ; // 这一行是用来画一个正方形的
+        // GLCheckError();
+        // ASSERT(GLLogCall());
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
