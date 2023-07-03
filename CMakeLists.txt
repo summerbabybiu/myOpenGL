@@ -3,7 +3,7 @@ project(MyOpenGL)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(MyOpenGL src/main.cpp)
+add_executable(MyOpenGL src/main.cpp src/Rendered.cpp src/IndexBuffer.cpp src/VertexBuffer.cpp)
 include_directories(/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw/include /usr/local/include)
 
 link_directories(/Users/summerbaby/Desktop/summmbaby/myOpenGL/dependence/glfw)

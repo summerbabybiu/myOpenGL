@@ -6,24 +6,10 @@
 #include <fstream>
 #include <sstream>
 
-// 断言函数
-#define ASSERT(x) if (!(x)) __builtin_trap();
+#include "Renderer.h"
 
-#define GLCall(x) GLClearError();\
-    x;\
-    ASSERT(GLLogCall(#x, __FILE__, __LINE__));
-
-static void GLClearError() {
-    while (glGetError() != GL_NO_ERROR);
-}
-
-static bool GLLogCall(const char* function, const char* file, int line) {
-    while (GLenum error = glGetError()) {
-        std::cout << "[OpenGL Error] (" << error << "):" << function << " " << file << ":" << line << std::endl;
-        return false;
-    }
-    return true;
-}
+#include "VertexBuffer.h"
+#include "IndexBuffer.h"
 
 struct ShaderProgramSource {
     std::string VertexSource;
@@ -171,50 +157,17 @@ int main(void)
         0, 1, 2,
         2, 3, 0 
     };
-    unsigned int buffer;
-    glGenBuffers(1, &buffer);
-    glBindBuffer(GL_ARRAY_BUFFER, buffer);
-    glBufferData(GL_ARRAY_BUFFER, 4 * 2 * sizeof(float), positions, GL_STATIC_DRAW);
+    unsigned int vao;
+    glGenVertexArrays(1, &vao);
+    glBindVertexArray(vao);
 
-    unsigned int vertexArray;
-    glGenVertexArrays(1, &vertexArray);
-    glBindVertexArray(vertexArray);
-
+    VertexBuffer vb(positions, 4 * 2 * sizeof(float));
     // 启用顶点属性
     glEnableVertexAttribArray(0);
     // 指定实际数据的布局
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0);
 
-
-
-    unsigned int ibo;
-    glGenBuffers(1, &ibo);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * sizeof(unsigned int), indices, GL_STATIC_DRAW);
-
-    // glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-//    std::string vertexShader =
-//        "#version 330 core\n"
-//        "\n"
-//        "layout(location = 0) in vec4 position;\n"
-//        "void main()\n"
-//        "{\n"
-//        "   gl_Position = position;\n"
-//        "}\n";
-//
-//    std::string fragmentShader =
-//        "#version 330 core\n"
-//        "\n"
-//        "layout(location = 0) out vec4 color;\n"
-//        "\n"
-//        "void main()\n"
-//        "{\n"
-//        "   color = vec4(0.1, 0.5, 0.0, 1.0);\n"
-//        "}\n";
-
-//    unsigned int shader = CreateShader(vertexShader, fragmentShader);
-//    glUseProgram(shader);
+    IndexBuffer ib(indices, 6);
 
     //../res/shaders/Basic.shader
     ShaderProgramSource source = ParseShader("/Users/summerbaby/Desktop/summmbaby/myOpenGL/res/shaders/Basic.shader");
@@ -232,6 +185,11 @@ int main(void)
     ASSERT(location != -1);
     GLCall(glUniform4f(location, 0.8f, 0.3f, 0.8f, 1.0f));
 
+    // 解绑
+    GLCall(glUseProgram(0));
+    GLCall(glBindBuffer(GL_ARRAY_BUFFER, 0));
+    GLCall(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0));
+
     float r =0.0f;
     float increment = 0.05f;
 
@@ -241,17 +199,22 @@ int main(void)
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // 下面这5行是自己加的，用来画一个三角形
-        // glBegin(GL_TRIANGLES);
-        // glVertex2d(-0.5, -0.5);
-        // glVertex2d(0.5, -0.5);
-        // glVertex2d(0, 0.5);
-        // glEnd();
-
-        // glDrawArrays(GL_TRIANGLES, 0, 3); // 这一行是用来画一个三角形的
-        // GLClearError();
-
+        // 绑定着色器
+        GLCall(glUseProgram(shader));
+        // 设置统一变量
         GLCall(glUniform4f(location, r, 0.3f, 0.8f, 1.0f));
+
+        // // 绑定顶点缓冲区
+        // GLCall(glBindBuffer(GL_ARRAY_BUFFER, buffer));
+        // // 启用顶点属性
+        // GLCall(glEnableVertexAttribArray(0));
+        // 指定实际数据的布局
+        // GLCall(glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0));
+        // 绑定索引缓冲区
+        // GLCall(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo));
+        GLCall(glBindVertexArray(vao));
+        ib.Bind();
+
         GLCall( glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr)) ; // 这一行是用来画一个正方形的
         // GLCheckError();
         // ASSERT(GLLogCall());
